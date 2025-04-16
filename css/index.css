@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+body 
+{
+    font-family: 'Arial', sans-serif;
+}
+.header__overlay
+ {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 20px 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header__container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo 
+{
+    color: white;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.header__menu 
+{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.header__logo a 
+{
+    display: inline-block;
+    text-decoration: none;
+}
+.header__logo img 
+{
+    height: 100px; 
+    width: auto;
+    backdrop-filter: blur(4px);
+}
+.header__link 
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+.header__link:hover 
+{
+    opacity: 0.7;
+}
+.header__bg
+{
+    background-image: url('img/bvsh.png');
+    position: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat;   
+
+}
+.service {
+    padding: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service {
+    padding: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.divider {
+    height: 1px; /* Độ dày của đường kẻ */
+    background-color: #535252; /* Màu của đường kẻ (bạn có thể thay đổi) */
+    width: 100%; /* Chiều dài của đường kẻ */
+    margin-bottom: 62px; /* Khoảng cách giữa đường kẻ và grid dịch vụ */
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    /* Thuộc tính gap để thiết lập khoảng cách */
+    gap: 30px 62px; /* Khoảng cách hàng là 30px, khoảng cách cột là 20px */
+}
+.service-box {
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.service-box.empty {
+    background-color: transparent;
+    cursor: default;
+}
+
+.service-box.empty:hover {
+    background-color: transparent;
+}
+
+/* Định nghĩa vị trí cho các ô trống ở hàng 3 và 4 */
+.service-grid > .service-box:nth-child(9) {
+    grid-column: 1 / span 1; /* Bắt đầu ở cột 1, chiếm 1 cột */
+    grid-row: 3 / span 1;    /* Ở hàng 3 */
+    
+}
+
+.service-grid > .service-box:nth-child(10) {
+    grid-column: 2 / span 1; /* Bắt đầu ở cột 2, chiếm 1 cột */
+    grid-row: 3 / span 1;    /* Ở hàng 3 */
+}
+
+.service-grid > .service-box:nth-child(11) {
+    grid-column: 3 / span 1; /* Bắt đầu ở cột 3, chiếm 1 cột */
+    grid-row: 3 / span 1;    /* Ở hàng 3 */
+}
+
+.service-grid > .service-box:nth-child(12) {
+    grid-column: 1 / span 1; /* Bắt đầu ở cột 1, chiếm 1 cột */
+    grid-row: 4 / span 1;    /* Ở hàng 4 */
+}
+
+.service-grid > .service-box:nth-child(13) {
+    grid-column: 2 / span 1; /* Bắt đầu ở cột 2, chiếm 1 cột */
+    grid-row: 4 / span 1;    /* Ở hàng 4 */
+}
+
+.service-grid > .service-box:nth-child(14) {
+    grid-column: 3 / span 1; /* Bắt đầu ở cột 3, chiếm 1 cột */
+    grid-row: 4 / span 1;    /* Ở hàng 4 */
+}
+
+/* Điều chỉnh cho các màn hình nhỏ hơn (nếu cần) */
+@media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto auto auto auto auto; /* Điều chỉnh số hàng phù hợp */
+    }
+
+    /* Cần điều chỉnh lại vị trí các ô trống cho màn hình nhỏ hơn nếu cần */
+    .service-grid > .service-box:nth-child(9).empty,
+    .service-grid > .service-box:nth-child(10).empty,
+    .service-grid > .service-box:nth-child(11).empty,
+    .service-grid > .service-box:nth-child(12).empty,
+    .service-grid > .service-box:nth-child(13).empty,
+    .service-grid > .service-box:nth-child(14).empty 
+    {
+        grid-column: span 1;
+        grid-row: auto/* Để các ô trống tự động chảy theo dòng */
+    }
+}
+
+@media (max-width: 576px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto; /* Điều chỉnh số hàng phù hợp */
+    }
+}
+/* Style cho Section Sự Kiện (Đã cập nhật cho bố cục đóng hộp) */
+.events-container {
+    text-align: center; /* Căn giữa chữ */
+    max-height: max-content;
+    padding: 20px; /* Khoảng cách bên trong section */
+    background-color:#faefe0; /* Màu nền nhạt cho section (có thể thay đổi) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Đổ bóng nhẹ để tạo chiều sâu */
+}
+
+.events-title {
+    font-size: 2.5em; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    color: #333; /* Màu chữ */
+    margin-bottom: 30px; /* Khoảng cách bên dưới tiêu đề */
+}
+
+.events-slider {
+    display: flex; /* Sắp xếp các event-card theo hàng ngang */
+    gap: 20px; /* Khoảng cách giữa các event-card */
+    margin-bottom: 20px; /* Khoảng cách bên dưới slider */
+    justify-content: center; /* Căn giữa các event-card theo chiều ngang */
+    align-items: center; /* Căn giữa các event-card theo chiều dọc */
+    overflow-x: auto; /* Cho phép cuộn ngang nếu nội dung tràn (quan trọng!) */
+    padding-bottom: 10px; /* Thêm padding dưới để tránh nội dung bị che bởi thanh cuộn */
+}
+
+.event-card {
+    background-color: #faefe0; /* Màu nền cho mỗi card (có thể thay đổi) */
+    border-radius: 8px; /* Bo tròn góc card */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho card */
+    overflow: hidden; /* Ẩn nội dung tràn ra ngoài card */
+    width: 400px; /* Chiều rộng card (có thể thay đổi) */
+    height: auto; /* Chiều cao card tự động điều chỉnh theo ảnh */
+    flex-shrink: 0; /* Ngăn card bị thu nhỏ */
+}
+
+.event-card img {
+    display: block; /* Loại bỏ khoảng trắng thừa dưới ảnh */
+    width: 100%; /* Ảnh chiếm toàn bộ chiều rộng card */
+    height: auto; /* Ảnh giữ tỷ lệ khung hình */
+}
+
+.slider-navigation {
+    display: flex; /* Sắp xếp các slider-dot theo hàng ngang */
+    gap: 10px; /* Khoảng cách giữa các slider-dot */
+    justify-content: center; /* Căn giữa các slider-dot */
+    align-items: center; /* Căn giữa các slider-dot theo chiều dọc */
+}
+
+.slider-dot {
+    width: 12px; /* Chiều rộng dot */
+    height: 12px; /* Chiều cao dot */
+    border-radius: 50%; /* Hình tròn */
+    background-color: #ccc; /* Màu nền dot (chưa chọn) */
+    cursor: pointer; /* Hiển thị con trỏ tay khi hover */
+    border: none; /* Không có viền */
+    outline: none; /* Không có viền khi focus */
+}
+
+.slider-dot.active {
+    background-color: #888; /* Màu nền dot (đang chọn) */
+}
+
+/* Bạn có thể thêm CSS tùy chỉnh cho nội dung bên trong card nếu cần */
+.event-details {
+    padding: 15px;
+    text-align: left;
+}
+
+.event-details h3 {
+    margin-top: 0;
+    color: #555;
+}
+
+.event-details p {
+    color: #777;
+    margin-bottom: 5px;
+}
