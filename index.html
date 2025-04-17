@@ -17,7 +17,7 @@
               </div>
             <nav class="header__nav">
               <ul class="header__menu">
-                <li class="header__item"><a href="#" class="header__link">Giới Thiệu</a></li>
+                <li class="header__item"><a href="about.html" class="header__link">Giới Thiệu</a></li>
                 <li class="header__item"><a href="#" class="header__link">Dịch Vụ</a></li>
                 <li class="header__item"><a href="#" class="header__link">Thông Tin Làm Đẹp</a></li>
                 <li class="header__item"><a href="#" class="header__link">Sự Kiện</a></li>
@@ -28,30 +28,38 @@
         </div>
         <img src="img/bvsh.png" alt="bgbvsh" class="header__bg" />
       </header>
-      <section class="service">
-        <h2 class="title">DỊCH VỤ</h2>
-        <div class="divider"></div>
-            <div class="service-grid">
-                <div class="service-box">XÓA NHĂN</div>
-                <div class="service-box">LÀM ĐẦY</div>
-                <div class="service-box">CĂNG CHỈ</div>
-                <div class="service-box">LASER</div>
-                <div class="service-box">MESO - B.A.P</div>
-                <div class="service-box">TRỊ NÁM</div>
-                <div class="service-box">TRẺ HÓA DA</div>
-                <div class="service-box">TRỊ MỤN</div>
-                <div class="service-box empty"></div>
-                <div class="service-box empty"></div>
-                <div class="service-box empty"></div>
-                <div class="service-box empty"></div>
-                <div class="service-box empty"></div>
-                <div class="service-box empty"></div>
-            </div>
+      <div class="service-container">
+        <h2 class="service-title">DỊCH VỤ</h2>
+        <div class="service-divider"></div>
+        <!-- Hàng 1 -->
+        <div class="row">
+          <div class="box">XÓA NHĂN</div>
+          <div class="box">LÀM ĐẦY</div>
+          <div class="box">CĂNG CHỈ</div>
+          <div class="box">LASER</div>
         </div>
-      </section>
+        <!-- Hàng 2 -->
+        <div class="row">
+          <div class="box">MESO - B.A.P</div>
+          <div class="box">TRỊ NÁM</div>
+          <div class="box">TRẺ HÓA DA</div>
+          <div class="box">TRỊ MỤN</div>
+        </div>
+        <!-- Hàng 3 -->
+        <div class="row row-center">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+        <!-- Hàng 4 -->
+        <div class="row row-center">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>  
       <div class="events-container">
         <h1 class="events-title">SỰ KIỆN TRONG THÁNG</h1>
-
         <div class="events-slider">
             <div class="event-card">
                 <img src="img/ev1.png" alt="Sự kiện 1">
@@ -60,12 +68,35 @@
                 <img src="img/ev2.png" alt="Sự kiện 2">
                 </div>
             </div>
-
         <div class="slider-navigation">
             <button class="slider-dot active"></button>
             <button class="slider-dot"></button>
             <button class="slider-dot"></button>
         </div>
     </div>
+    <div class="technology-container">
+      <h1 class="technology-title">CÔNG NGHỆ NỔI BẬT</h1>
+      <div class="technology-divider"></div>
+      <div class="technology-slider">
+        <div class="technology-item">
+          <img src="img/tech1.jpg" alt="Thermage FLX">
+        </div>
+        <div class="technology-item">
+          <img src="img/tech2.jpg" alt="ASCE+">
+        </div>
+        <div class="technology-item">
+          <img src="img/tech3.jpg" alt="Shurink Universe">
+        </div>
+      </div>
+      <!-- Dấu chấm trượt slider -->
+      <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    
 </body>
 </html>
