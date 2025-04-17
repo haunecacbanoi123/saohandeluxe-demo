@@ -3,10 +3,6 @@
     margin: 0;
     padding: 0;
   }
-body 
-{
-    font-family: 'Arial', sans-serif;
-}
 .header__overlay
  {
     background: rgba(0, 0, 0, 0.3);
@@ -58,7 +54,7 @@ body
 }
 .header__bg
 {
-    background-image: url('img/bvsh.png');
+    background-image: url('');
     position: center;
     width: 100%;
     height: 100%;
@@ -298,4 +294,338 @@ body
   .dot:hover {
     background-color: #fff;
   }
+  .brandequity-container {
+    background-color: #f9ecd9;
+    padding: 80px 60px;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #1a1a1a;
+  }
   
+  .brand-header {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .brand-sub {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 6px 0;
+  }
+  
+  .brand-title {
+    font-size: 60px;
+    font-weight: 800;
+    margin: 10px 0;
+    letter-spacing: -1px;
+  }
+  
+  .brand-desc {
+    font-size: 20px;
+    margin-top: 14px;
+    font-weight: 400;
+    color: #333;
+  }
+  
+  .brand-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .stat-item {
+    flex: 1;
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* để mọi thứ căn trái */
+    text-align: left;
+  }
+  
+  .stat-item.align-left {
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .stat-item .divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    background-color: #000;
+    width: 100%;
+  }
+  
+  
+  .stat-label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  
+  .stat-number {
+    font-size: 72px;
+    font-weight: bold;
+    color: #782f25;
+    margin: 10px 0;
+  }
+  
+  .stat-number.large {
+    font-size: 64px;
+  }
+  
+  .stat-number.suffix {
+    font-size: 50px;
+    font-weight: 500;
+    margin-left: 5px;
+    vertical-align: top;
+    position: relative;
+    top: 20px;
+  }
+  
+  .stat-number-row {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .stat-caption {
+    font-size: 24px;
+    color: #782f25;
+  }
+  .feedback-container {
+    position: relative;
+    padding: 100px 20px;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Helvetica Neue", sans-serif;
+  }
+  
+  .feedback-container h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  .quote {
+    font-style: italic;
+    color: #444;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .role {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .pagination .number {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .pagination .line {
+    width: 40px;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .pagination .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #ccc;
+    border-radius: 50%;
+  }
+  
+  .pagination .dot.active {
+    width: 10px;
+    height: 10px;
+    background-color: #444;
+  }
+  
+  /* Avatar images */
+  .avatar {
+    position: absolute;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+  
+  .avatar1 { bottom: 60px; left: 100px; }
+  .avatar2 { bottom: 120px; right: 100px; }
+  .avatar3 { bottom: 40px; right: 200px; }
+  .avatar4 { bottom: 100px; left: 200px; }
+  .avatar5 { bottom: 10px; left: 50%; transform: translateX(-50%); }
+  .avatar6 { top: 100px; left: 50px; }
+  .avatar7 { top: 80px; right: 50px; }
+  
+  /* Background bubbles */
+  .dot-bg {
+    position: absolute;
+    background-color: pink;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+  
+  .dot1 { width: 40px; height: 40px; top: 10%; left: 5%; }
+  .dot2 { width: 20px; height: 20px; top: 25%; right: 10%; }
+  .dot3 { width: 15px; height: 15px; bottom: 20%; left: 10%; }
+  .dot4 { width: 25px; height: 25px; bottom: 10%; right: 5%; }
+  .dot5 { width: 10px; height: 10px; bottom: 5%; left: 45%; }
+  .channel-container {
+    background-color: #222;
+    color: white;
+    padding: 100px 20px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .channel-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/cnbgr.png); /* Đường dẫn đến hình nền của bạn */
+    background-size: 50%; /* Hoặc contain tùy theo bố cục bạn muốn */
+    background-position:left bottom;
+    background-repeat: no-repeat;
+    filter: blur(1px); /* Điều chỉnh độ mờ tại đây */
+  }
+  
+  .channel-container > * {
+    position: relative; /* Đảm bảo các phần tử con nằm trên lớp background mờ */
+    z-index: 1; /* Đảm bảo các phần tử con hiển thị */
+  }
+  
+  /* Các kiểu dáng hiện có cho các phần tử bên trong .channel-container (ví dụ: h1, p, các container chứa mạng xã hội) vẫn giữ nguyên */
+  
+  .title-box {
+    text-align: left;        /* Căn trái */
+    align-items: flex-start; /* Đảm bảo nếu có flex thì vẫn bám trên */
+    margin-left: auto;
+  }
+    
+  .brand {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  
+  .underline {
+    width: 400px;
+    height: 2px;
+    background-color: white;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .phones {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: 600px;
+  }
+  
+  .phone {
+    width: 180px;
+    height: 360px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    background-image: url(../img/cnp1.png);
+  }
+  
+  .phone span {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.7);
+    text-transform: lowercase;
+  }
+  body {
+    background-color: #f6ebdc;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    padding: 40px;
+    color: #222;
+  }
+  
+  .footer-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  
+  .footer-left h2 {
+    margin: 0 0 8px 0;
+    font-weight: bold;
+  }
+  
+  .line-left {
+    width: 330px;
+    height: 2px;
+    background-color: #222;
+  }
+  
+  .line-right {
+    margin-top: 35px;
+    flex-grow: 1;
+    height: 2px;
+    background-color: #222;
+  }
+  
+  .footer-text {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 24px;
+    font-style: italic;
+    text-decoration: underline;
+  }  
